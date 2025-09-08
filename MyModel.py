@@ -7,6 +7,7 @@ CATEGORICAL_FEATURES = ['sex','season','emgdeptchin_name','dayzone','judegmentco
 NUMERIC_FEATURES = ['age','los','weekend','weekend_dischargetime','dayzone_discharge','houseincome','sex_vs','vs_age','taiwan',]
 FEATURES = CATEGORICAL_FEATURES + NUMERIC_FEATURES
 
+
 # ===================TCN=================== #
 class TemporalBlock(nn.Module):
     def __init__(self, n_inputs, n_outputs, kernel_size, stride, dilation, padding, dropout=0.2):
