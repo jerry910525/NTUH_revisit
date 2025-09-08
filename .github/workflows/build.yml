@@ -3,7 +3,7 @@ name: Build
 on:
   push:
     branches:
-      - main   # 改成你的預設分支
+      - master   # 改成你的預設分支
   pull_request:
     types: [opened, synchronize, reopened]
   workflow_dispatch:  # 手動觸發
