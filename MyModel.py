@@ -223,7 +223,6 @@ class MyModel(object):
         print("Initializing")
         import json
         import numpy as np
-        # from loss_func import FocalLoss
 
         # 固定的特徵定義（從外部帶入也可）
         self.CATEGORICAL_FEATURES = ['sex','season','emgdeptchin_name','dayzone','judegmentcode_new',
@@ -265,7 +264,7 @@ class MyModel(object):
         self.model.to(self.device)
         self.model.eval()
 
-    def predict(self, X, features_names=None):
+    def predict(self, X):
         print("Predicting")
         print(f"Input type: {type(X)}")
 
